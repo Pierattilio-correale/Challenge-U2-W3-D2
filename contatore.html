@@ -4,10 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contatore con sessionStorage</title>
+    <style>
+      body {
+        height: 500px;
+        background-color: #80808091;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      .green {
+        background-color: green;
+        font-size: 20px;
+        color: white;
+        border-radius: 2em;
+        padding: 0.5em;
+      }
+      .red {
+        background-color: red;
+
+        font-size: 20px;
+        padding: 0.5em;
+        border-radius: 2em;
+      }
+    </style>
   </head>
   <body>
-    <h1>Tempo trascorso: <span id="counter">0</span> secondi</h1>
-    <button id="startstop">Start</button>
+    <div class="container">
+      <h1>
+        Tempo trascorso: <span id="counter">0</span> secondi
+        <button id="startstop" class="green">Start</button>
+      </h1>
+    </div>
     <script src="./scriptcontatore.js"></script>
   </body>
 </html>
